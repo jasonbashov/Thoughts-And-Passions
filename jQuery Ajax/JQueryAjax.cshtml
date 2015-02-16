@@ -1,0 +1,29 @@
+<div id="ajaxShit"></div>
+
+<a onclick="trySendData()" href="#" class="btn btn-primary">AJAX</a>
+<script>
+    function getServerTime() {
+        $("#timeDisplay").html("Loading...");
+        $("#timeDisplay").load("/Home/ServerTime");
+    }
+
+    function trySendData() {
+        var masiv = [100, 200, 300];
+        var postData = { incomming: masiv };
+
+        $.ajax({
+            type: "POST",
+            url: "/Home/GetAjax/2",
+            data: postData,
+            success: function (html) {
+                alert(html);
+            },
+            dataType: "json",
+            traditional: true
+        });
+
+        //$.get("/Home/GetAjax", masiv, function (html) {
+        //    $('#ajaxShit').append(html);
+        //})
+    }
+</script>
