@@ -29,3 +29,6 @@ Rest API
 
 [Best Practices]
                 Best Practices for Designing a Pragmatic RESTful API - http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
+                URI Conventions (OData Version 2.0) - http://www.odata.org/documentation/odata-version-2-0/uri-conventions/
+                URL Conventions (OData Version 3.0) - http://www.odata.org/documentation/odata-version-3-0/url-conventions/
+                OData Version 4.0 Part 2: URL Conventions Plus Errata 02 - http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html
