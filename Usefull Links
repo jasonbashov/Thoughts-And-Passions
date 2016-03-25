@@ -16,13 +16,21 @@ var links = {
 		Design: {
 			Useful CSS Classes in SharePoint 2013 - https://joshmccarty.com/2014/08/useful-css-classes-sharepoint-2013/,
 			SharePoint 2013 CSS classes that suck and save the day - http://blog.sharepointexperience.com/2013/05/sharepoint-2013-css-classes-that-suck-and-save-the-day/
+		},
+		Programming: {
+			SharePoint Escape Characters: https://realsharepoint.wordpress.com/2011/07/22/sharepoint-escape-characters/,
+			SharePoint Calculated Column Formulas & Functions – The Essential Guide: http://www.tuomi.ca/2012/09/20/sharepoint-calculated-column-formulas/,
+			Calculated Field Formulas MSDN: https://msdn.microsoft.com/en-us/library/office/bb862071(v=office.14).aspx,
+			SharePoint 2013 - Understanding and Using the SharePoint 2013 REST Interface: https://msdn.microsoft.com/en-us/magazine/dn198245.aspx,
+			Use OData query operations in SharePoint REST requests: https://msdn.microsoft.com/en-us/library/office/fp142385.aspx
 		}
 	},
-	Programming: {
-		SharePoint Escape Characters: https://realsharepoint.wordpress.com/2011/07/22/sharepoint-escape-characters/,
-		SharePoint Calculated Column Formulas & Functions – The Essential Guide: http://www.tuomi.ca/2012/09/20/sharepoint-calculated-column-formulas/,
-		Calculated Field Formulas MSDN: https://msdn.microsoft.com/en-us/library/office/bb862071(v=office.14).aspx,
-		SharePoint 2013 - Understanding and Using the SharePoint 2013 REST Interface: https://msdn.microsoft.com/en-us/magazine/dn198245.aspx,
-		Use OData query operations in SharePoint REST requests: https://msdn.microsoft.com/en-us/library/office/fp142385.aspx
+	Rest API: {
+		Best Practices: {
+			Best Practices for Designing a Pragmatic RESTful API: http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
+                	URI Conventions (OData Version 2.0): http://www.odata.org/documentation/odata-version-2-0/uri-conventions/
+                	URL Conventions (OData Version 3.0): http://www.odata.org/documentation/odata-version-3-0/url-conventions/
+                	OData Version 4.0 Part 2: URL Conventions Plus Errata 02: http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html
+		}
 	}
 }
