@@ -6,6 +6,9 @@ var links = {
 		Charts: {
 			 Essential JavaScript: the top five graphical libraries: http://www.creativebloq.com/javascript/essential-javascript-top-five-graphical-libraries-4135720,
 			 16 JavaScript Libraries for Creating Beautiful Charts: http://www.sitepoint.com/15-best-javascript-charting-libraries/
+		},
+		Colors: {
+			Colour handling and processing in JavaScript: http://code.stephenmorley.org/javascript/colour-handling-and-processing/
 		}
 	},
 	SharePoint2013: {
