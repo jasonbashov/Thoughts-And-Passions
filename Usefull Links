@@ -27,7 +27,15 @@ var links = {
 			SharePoint 2013 - Understanding and Using the SharePoint 2013 REST Interface: https://msdn.microsoft.com/en-us/magazine/dn198245.aspx,
 			Use OData query operations in SharePoint REST requests: https://msdn.microsoft.com/en-us/library/office/fp142385.aspx,
 			CRUD on List Items Using REST Services & jQuery: https://www.plusconsulting.com/blog/2013/05/crud-on-list-items-using-rest-services-jquery/,
-			CRUD Operation to List Using SharePoint 2013 Rest API: http://www.codeproject.com/Articles/990131/CRUD-Operation-to-List-Using-SharePoint-Rest-API
+			CRUD Operation to List Using SharePoint 2013 Rest API: http://www.codeproject.com/Articles/990131/CRUD-Operation-to-List-Using-SharePoint-Rest-API,
+			SharePoint 2013 REST expand and filter issue: http://sharepoint.stackexchange.com/questions/164403/sharepoint-2013-rest-expand-and-filter-issue,
+			SharePoint 2013 REST expand and filter issue (workaround): {
+				var rootUrl = _spPageContextInfo.webAbsoluteUrl, 
+				    firstAjaxCallUrl = rootUrl + "/_api/web/Lists?$select=Title&$filter=EntityTypeName eq '[TheNameOfTheCustomListTheFirstTimeItWasCreated]'", 
+				    secondAjaxUrl = rootUrl + "/_api/web/Lists/GetByTitle('{0}')/items?$filter=OData__ModerationStatus eq 0&$orderby=Created desc&$top=1";
+				    
+				makeAjaxCall(firstAjaxCallUrl).then(function (listData) { makeAjaxCall(secondAjaxUrl).then(dowhateveryoulike); });
+			}
 		}
 	},
 	Rest API: {
