@@ -34,7 +34,11 @@ var links = {
 				    firstAjaxCallUrl = rootUrl + "/_api/web/Lists?$select=Title&$filter=EntityTypeName eq '[TheNameOfTheCustomListTheFirstTimeItWasCreated]'", 
 				    secondAjaxUrl = rootUrl + "/_api/web/Lists/GetByTitle('{0}')/items?$filter=OData__ModerationStatus eq 0&$orderby=Created desc&$top=1";
 				    
-				makeAjaxCall(firstAjaxCallUrl).then(function (listData) { /*replace '{0}' in secondAjaxUrl with the Title from the returned listData*/ aboutsUsUrl = aboutsUsUrl.replace('{0}', listData[0].Title);  makeAjaxCall(secondAjaxUrl).then(dowhateveryoulike); });
+				makeAjaxCall(firstAjaxCallUrl).then(function (listData) {
+					/*replace '{0}' in secondAjaxUrl with the Title from the returned listData*/
+					aboutsUsUrl = aboutsUsUrl.replace('{0}', listData[0].Title); 
+					makeAjaxCall(secondAjaxUrl).then(dowhateveryoulike); 
+				});
 			}
 		}
 	},
