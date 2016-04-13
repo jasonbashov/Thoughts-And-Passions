@@ -1,0 +1,31 @@
+var code = {
+    SharePoint2013: {
+        SharePoint 2013 REST expand and filter issue (workaround): { 
+            var rootUrl = _spPageContextInfo.webAbsoluteUrl, 
+			    firstAjaxCallUrl = rootUrl + "/_api/web/Lists?$select=Title&$filter=EntityTypeName eq '[TheNameOfTheCustomListTheFirstTimeItWasCreated]'", 
+			    secondAjaxUrl = rootUrl + "/_api/web/Lists/GetByTitle('{0}')/items?$filter=OData__ModerationStatus eq 0&$orderby=Created desc&$top=1";
+			
+			makeAjaxCall(firstAjaxCallUrl).then(function (listData) {
+			    /*replace '{0}' in secondAjaxUrl with the Title from the returned listData*/
+			    aboutsUsUrl = aboutsUsUrl.replace('{0}', listData[0].Title); 
+			    makeAjaxCall(secondAjaxUrl).then(dowhateveryoulike); 
+            });
+            
+            function makeAjaxGetCall(ajaxUrl, errorMsg) {
+                var defered = $.Deferred();
+                $.ajax({
+                    url: ajaxUrl,
+                    method: "GET",
+                    headers: { "Accept": "application/json; odata=verbose" },
+                    success: function (data) {
+                        defered.resolve(data.d.results);
+                    },
+                    error: function (error) {
+                        defered.reject(errorMsg + '. Response: ' + error.responseText);
+                    }
+                });
+                return defered.promise();
+            }
+        } 
+    }
+}
