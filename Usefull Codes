@@ -2,7 +2,7 @@ var code = {
 	SharePoint2013: {
         SharePoint 2013 REST expand and filter issue (workaround): { 
             var rootUrl = _spPageContextInfo.webAbsoluteUrl, 
-				firstAjaxCallUrl = rootUrl + "/_api/web/Lists?$select=Title&$filter=EntityTypeName eq '[TheNameOfTheCustomListTheFirstTimeItWasCreated]'", 
+				firstAjaxCallUrl = rootUrl + "/_api/web/Lists?$select=Title&$filter=EntityTypeName eq '[TheNameOfTheCustomListTheFirstTimeItWasCreated + 'List']'", 
 				secondAjaxUrl = rootUrl + "/_api/web/Lists/GetByTitle('{0}')/items?$filter=OData__ModerationStatus eq 0&$orderby=Created desc&$top=1";
 			
 			makeAjaxCall(firstAjaxCallUrl).then(function (listData) {
