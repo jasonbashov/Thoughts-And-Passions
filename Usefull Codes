@@ -1,14 +1,14 @@
 var code = {
-    SharePoint2013: {
+	SharePoint2013: {
         SharePoint 2013 REST expand and filter issue (workaround): { 
             var rootUrl = _spPageContextInfo.webAbsoluteUrl, 
-			    firstAjaxCallUrl = rootUrl + "/_api/web/Lists?$select=Title&$filter=EntityTypeName eq '[TheNameOfTheCustomListTheFirstTimeItWasCreated]'", 
-			    secondAjaxUrl = rootUrl + "/_api/web/Lists/GetByTitle('{0}')/items?$filter=OData__ModerationStatus eq 0&$orderby=Created desc&$top=1";
+				firstAjaxCallUrl = rootUrl + "/_api/web/Lists?$select=Title&$filter=EntityTypeName eq '[TheNameOfTheCustomListTheFirstTimeItWasCreated]'", 
+				secondAjaxUrl = rootUrl + "/_api/web/Lists/GetByTitle('{0}')/items?$filter=OData__ModerationStatus eq 0&$orderby=Created desc&$top=1";
 			
 			makeAjaxCall(firstAjaxCallUrl).then(function (listData) {
-			    /*replace '{0}' in secondAjaxUrl with the Title from the returned listData*/
-			    aboutsUsUrl = aboutsUsUrl.replace('{0}', listData[0].Title); 
-			    makeAjaxCall(secondAjaxUrl).then(dowhateveryoulike); 
+				/*replace '{0}' in secondAjaxUrl with the Title from the returned listData*/
+				aboutsUsUrl = aboutsUsUrl.replace('{0}', listData[0].Title); 
+				makeAjaxCall(secondAjaxUrl).then(dowhateveryoulike); 
             });
             
             function makeAjaxGetCall(ajaxUrl, errorMsg) {
@@ -27,5 +27,19 @@ var code = {
                 return defered.promise();
             }
         } 
+    },
+	JavaSvript: {
+		Get URL Parameters by name: {
+			function GetURLParameter(sParam) {
+				var sPageURL = window.location.search.substring(1);
+				var sURLVariables = sPageURL.split('&');
+				for (var i = 0; i < sURLVariables.length; i++) {
+					var sParameterName = sURLVariables[i].split('=');
+					if (sParameterName[0] == sParam) {
+						return sParameterName[1];
+					}
+				}
+			}
+    	}
     }
 }
