@@ -14,7 +14,9 @@ var links = {
 	SharePoint2013: {
 		Configuration: {
 			Configuring Incoming Email on a SharePoint 2013 Document Library - https://www.youtube.com/watch?v=mHLPZzJ15iU,
-			Enable and configure e-mail support for a list or library - https://support.office.com/en-us/article/Enable-and-configure-e-mail-support-for-a-list-or-library-dcaf44a0-1d9b-451a-84c7-6c52e7db908e
+			Enable and configure e-mail support for a list or library - https://support.office.com/en-us/article/Enable-and-configure-e-mail-support-for-a-list-or-library-dcaf44a0-1d9b-451a-84c7-6c52e7db908e,
+			How to enable anonymous access in SharePoint 2013 - http://www.sharepoint-journey.com/how-to-enable-anonymous-access-in-sharepoint-2013.html,
+			What Every Developer Needs to Know About SharePoint Apps, CSOM, and Anonymous Publishing Sites - https://blogs.msdn.microsoft.com/kaevans/2013/10/24/what-every-developer-needs-to-know-about-sharepoint-apps-csom-and-anonymous-publishing-sites/
 		},
 		Design: {
 			Useful CSS Classes in SharePoint 2013 - https://joshmccarty.com/2014/08/useful-css-classes-sharepoint-2013/,
@@ -34,10 +36,17 @@ var links = {
 	},
 	Rest API: {
 		Best Practices: {
-			Best Practices for Designing a Pragmatic RESTful API: http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
-                	URI Conventions (OData Version 2.0): http://www.odata.org/documentation/odata-version-2-0/uri-conventions/
-                	URL Conventions (OData Version 3.0): http://www.odata.org/documentation/odata-version-3-0/url-conventions/
+			Best Practices for Designing a Pragmatic RESTful API: http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api ,
+                	URI Conventions (OData Version 2.0): http://www.odata.org/documentation/odata-version-2-0/uri-conventions/,
+                	URL Conventions (OData Version 3.0): http://www.odata.org/documentation/odata-version-3-0/url-conventions/,
                 	OData Version 4.0 Part 2: URL Conventions Plus Errata 02: http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html
+		}
+	},
+	ASP.NET MVC: {
+		Programming: {
+			Setup a multi-language website using ASP.NET MVC: http://www.ryadel.com/en/setup-a-multi-language-website-using-asp-net-mvc/,
+			Resource Files and ASP.NET MVC Projects: http://odetocode.com/Blogs/scott/archive/2009/07/16/resource-files-and-asp-net-mvc-projects.aspx,
+			
 		}
 	}
 }
