@@ -56,5 +56,10 @@ var links = {
 			Resource Files and ASP.NET MVC Projects: http://odetocode.com/Blogs/scott/archive/2009/07/16/resource-files-and-asp-net-mvc-projects.aspx,
 			
 		}
+	},
+	IIS: {
+		Configuration: {
+			Creating IIS7 sites, applications, and virtual directories using Internet Information Services Manager: http://www.bloggingdeveloper.com/post/Creating-IIS7-sites-applications-and-virtual-directories-using-Internet-Information-Services-Manager.aspx
+		}
 	}
 }
