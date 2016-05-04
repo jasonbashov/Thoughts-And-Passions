@@ -73,6 +73,21 @@ var code = {
 			loadjscssfile("myscript.js", "js") //dynamically load and add this .js file
 			loadjscssfile("javascript.php", "js") //dynamically load "javascript.php" as a JavaScript file
 			loadjscssfile("mystyle.css", "css") ////dynamically load and add this .css file
+		},
+		Extract root domain name from string :{
+			function extractDomain(url) {
+				var domain;
+				//find & remove protocol (http, ftp, etc.) and get domain
+				if (url.indexOf("://") > -1) {
+					domain = url.split('/')[2];
+				} else {
+					domain = url.split('/')[0];
+				}
+				
+				//find & remove port number
+				domain = domain.split(':')[0];
+				return domain;
+			}
 		}
 	}
 }
