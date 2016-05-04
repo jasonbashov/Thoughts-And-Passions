@@ -57,6 +57,11 @@ var links = {
 			
 		}
 	},
+	javaScript: {
+		Programming: {
+			Dynamically loading an external JavaScript or CSS file: http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml
+		}
+	}
 	IIS: {
 		Configuration: {
 			Creating IIS7 sites, applications, and virtual directories using Internet Information Services Manager: http://www.bloggingdeveloper.com/post/Creating-IIS7-sites-applications-and-virtual-directories-using-Internet-Information-Services-Manager.aspx
