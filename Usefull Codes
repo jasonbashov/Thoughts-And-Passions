@@ -29,6 +29,11 @@ var code = {
         } 
     },
 	JavaSvript: {
+		Detect changes to the html/text of a div: {
+			$('mydiv').bind("DOMSubtreeModified",function(){
+				alert('changed');
+			});
+		},
 		Get URL Parameters by name: {
 			function GetURLParameter(sParam) {
 				var sPageURL = window.location.search.substring(1),
