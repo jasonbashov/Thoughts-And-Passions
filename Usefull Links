@@ -34,7 +34,8 @@ var links = {
 				CRUD Operation to List Using SharePoint 2013 Rest API: http://www.codeproject.com/Articles/990131/CRUD-Operation-to-List-Using-SharePoint-Rest-API,
 				SharePoint 2013 REST expand and filter issue: http://sharepoint.stackexchange.com/questions/164403/sharepoint-2013-rest-expand-and-filter-issue,
 				SharePoint 2013 REST expand and filter issue (workaround): https://github.com/jasonbashov/Thoughts-And-Passions/blob/master/Usefull%20Codes,
-				ExecuteOrDelayUntilScriptLoaded not executing: http://sharepointkings.blogspot.bg/2013/12/executeordelayuntilscriptloaded-not.html
+				ExecuteOrDelayUntilScriptLoaded not executing: http://sharepointkings.blogspot.bg/2013/12/executeordelayuntilscriptloaded-not.html,
+				Returning a SharePoint 2013 termset in a tree structure using JavaScript: http://www.habaneroconsulting.com/insights/returning-a-sharepoint-2013-termset-in-a-tree-structure-using-javascript#.VzWrAYR97RZ
 			}
 		},
 		2010 : {
