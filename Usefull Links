@@ -61,7 +61,8 @@ var links = {
 	},
 	javaScript: {
 		Programming: {
-			Dynamically loading an external JavaScript or CSS file: http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml
+			Dynamically loading an external JavaScript or CSS file: http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml,
+			jQuery Selectors: http://stackoverflow.com/questions/609382/jquery-selector-id-ends-with
 		}
 	}
 	IIS: {
