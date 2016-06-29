@@ -70,4 +70,10 @@ var links = {
 			Creating IIS7 sites, applications, and virtual directories using Internet Information Services Manager: http://www.bloggingdeveloper.com/post/Creating-IIS7-sites-applications-and-virtual-directories-using-Internet-Information-Services-Manager.aspx
 		}
 	}
+	Common: {
+		RegularExpressions: {
+			RegExr is an online tool to learn, build, & test Regular Expressions (RegEx / RegExp): http://regexr.com/,
+			Regexper (Regular Expression Visualization Site): https://regexper.com 
+		}
+	}
 }
