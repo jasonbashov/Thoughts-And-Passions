@@ -62,7 +62,9 @@ var links = {
 	javaScript: {
 		Programming: {
 			Dynamically loading an external JavaScript or CSS file: http://www.javascriptkit.com/javatutors/loadjavascriptcss.shtml,
-			jQuery Selectors: http://stackoverflow.com/questions/609382/jquery-selector-id-ends-with
+			jQuery Selectors: http://stackoverflow.com/questions/609382/jquery-selector-id-ends-with,
+			The Final Steps to Mastering JavaScript’s “this” Keyword: https://www.sitepoint.com/mastering-javascripts-this-keyword/,
+			5 Great Features In EcmaScript 6 (ES6 Harmony) : http://www.wintellect.com/devcenter/nstieglitz/5-great-features-in-es6-harmony
 		}
 	}
 	IIS: {
