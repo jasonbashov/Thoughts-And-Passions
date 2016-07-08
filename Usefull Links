@@ -9,6 +9,9 @@ var links = {
 		},
 		Colors: {
 			Colour handling and processing in JavaScript: http://code.stephenmorley.org/javascript/colour-handling-and-processing/
+		},
+		Loaders: {
+			CodePen is a playground for the front end web: https://codepen.io
 		}
 	},
 	SharePoint2013: 
