@@ -30,6 +30,9 @@ var code = {
         	} 
     	},
 	JavaSvript: {
+		Change the playback speed of youtube player: {
+			document.getElementsByClassName('html5-main-video')[0].playbackRate = 2.8;
+		}
 		Detect changes to the html/text of a div: {
 			$('mydiv').bind("DOMSubtreeModified",function(){
 				alert('changed');
