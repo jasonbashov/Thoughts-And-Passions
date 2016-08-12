@@ -80,5 +80,9 @@ var links = {
 			RegExr is an online tool to learn, build, & test Regular Expressions (RegEx / RegExp): http://regexr.com/,
 			Regexper (Regular Expression Visualization Site): https://regexper.com 
 		}
+		Database: {
+			The Connection Strings Reference : https://www.connectionstrings.com/ ,
+			Oracle connection strings : https://www.connectionstrings.com/oracle/
+		}
 	}
 }
