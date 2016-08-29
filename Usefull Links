@@ -59,7 +59,7 @@ var links = {
 		Programming: {
 			Setup a multi-language website using ASP.NET MVC: http://www.ryadel.com/en/setup-a-multi-language-website-using-asp-net-mvc/,
 			Resource Files and ASP.NET MVC Projects: http://odetocode.com/Blogs/scott/archive/2009/07/16/resource-files-and-asp-net-mvc-projects.aspx,
-			
+			Grid.Mvc.Ajax (Extends the Grid.Mvc helper with AJAX paging, sorting, and column and form filtering): http://www.nuget.org/packages/Grid.Mvc.Ajax
 		}
 	},
 	javaScript: {
