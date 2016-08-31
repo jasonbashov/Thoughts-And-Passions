@@ -84,5 +84,10 @@ var links = {
 			The Connection Strings Reference : https://www.connectionstrings.com/ ,
 			Oracle connection strings : https://www.connectionstrings.com/oracle/
 		}
+		IDEs: {
+			Visual Studio: {
+				Web development tools: https://webtooling.visualstudio.com/extensions/web-development/
+			}
+		}
 	}
 }
