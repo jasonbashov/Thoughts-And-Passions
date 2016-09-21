@@ -80,18 +80,22 @@ var links = {
 		RegularExpressions: {
 			RegExr is an online tool to learn, build, & test Regular Expressions (RegEx / RegExp): http://regexr.com/,
 			Regexper (Regular Expression Visualization Site): https://regexper.com 
-		}
+		},
 		Database: {
 			The Connection Strings Reference : https://www.connectionstrings.com/ ,
 			Oracle connection strings : https://www.connectionstrings.com/oracle/
-		}
+		},
 		IDEs: {
 			Visual Studio: {
 				Web development tools: https://webtooling.visualstudio.com/extensions/web-development/
 			}
-		}
+		},
 		SoftwareArchitecture : {
 			Architectural Styles and the Design of Network-based Software Architectures: http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
+		},
+		Serialization: {
+			jSON and XML Serialization in ASP.NET Web API: http://www.asp.net/web-api/overview/formats-and-model-binding/json-and-xml-serialization
+			newtonsoft Serialization Attributes: http://www.newtonsoft.com/json/help/html/SerializationAttributes.htm
 		}
 	}
 }
