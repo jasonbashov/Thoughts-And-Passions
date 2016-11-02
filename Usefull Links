@@ -83,7 +83,8 @@ var links = {
 		},
 		Database: {
 			The Connection Strings Reference : https://www.connectionstrings.com/ ,
-			Oracle connection strings : https://www.connectionstrings.com/oracle/
+			Oracle connection strings : https://www.connectionstrings.com/oracle/,
+			Julie Lerman's MSDN articles : https://msdn.microsoft.com/en-us/magazine/mt149362?author=julie+lerman
 		},
 		IDEs: {
 			Visual Studio: {
