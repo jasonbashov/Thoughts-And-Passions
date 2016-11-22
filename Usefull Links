@@ -97,6 +97,9 @@ var links = {
 		Serialization: {
 			jSON and XML Serialization in ASP.NET Web API: http://www.asp.net/web-api/overview/formats-and-model-binding/json-and-xml-serialization
 			newtonsoft Serialization Attributes: http://www.newtonsoft.com/json/help/html/SerializationAttributes.htm
+		},
+		General: {
+			Event-Driven Programming: Introduction, Tutorial, History: http://eventdrivenpgm.sourceforge.net/
 		}
 	}
 }
