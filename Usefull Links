@@ -99,7 +99,8 @@ var links = {
 			newtonsoft Serialization Attributes: http://www.newtonsoft.com/json/help/html/SerializationAttributes.htm
 		},
 		General: {
-			Event-Driven Programming: Introduction, Tutorial, History: http://eventdrivenpgm.sourceforge.net/
+			Event-Driven Programming: Introduction, Tutorial, History: http://eventdrivenpgm.sourceforge.net/,
+			Martin Fowler's blog: http://martinfowler.com/
 		}
 	}
 }
