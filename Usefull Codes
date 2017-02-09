@@ -61,6 +61,11 @@ var code = {
 				return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
 			}
 		},
+		Replace strings: {
+			function replaceAll(str, find, replace) {
+				return str.replace(new RegExp(find, 'g'), replace);
+			}
+		},
 		Dynamically loading an external JavaScript or CSS file: {
 			function loadjscssfile(filename, filetype){
 				if (filetype=="js") { //if filename is a external JavaScript file
