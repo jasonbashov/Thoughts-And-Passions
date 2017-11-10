@@ -66,6 +66,14 @@ var code = {
 				return str.replace(new RegExp(find, 'g'), replace);
 			}
 		},
+		Format strings: {
+			function formatString(text, replacements) {
+				//replaces all placeholders with the values in replacements
+				return text.replace(/{\w+}/g, function (all) {
+					return replacements[all] || all;
+				});
+			}
+		},
 		Dynamically loading an external JavaScript or CSS file: {
 			function loadjscssfile(filename, filetype){
 				if (filetype=="js") { //if filename is a external JavaScript file
