@@ -9,13 +9,17 @@ namespace ConsoleApplication1
 {
     class Program
     {
+        public delegate int Func();
+
         //Instantiate a Singleton of the Semaphore with a value of 1. This means that only 1 thread can be granted access at a time.
         static SemaphoreSlim semaphoreSlim = new SemaphoreSlim(1, 1);
         delegate void TestDelegate(string s);
 
         static void Main(string[] args)
         {
-            PlayingWithTryGetValue();
+            PlayingWithDefaultIfEmpty();
+
+            //PlayingWithTryGetValue();
 
             //PlayingWithSemaphore();
             //Console.ReadKey();
@@ -32,6 +36,45 @@ namespace ConsoleApplication1
 
             //PlayingWithReferences();
         }
+
+        private static void PlayingWithDefaultIfEmpty()
+        {
+            // Empty list.
+            List<int> list = new List<int>();
+            var result = list.DefaultIfEmpty();
+
+            // One element in collection with default(int) value.
+            foreach (var value in result)
+            {
+                Console.WriteLine(value);
+            }
+
+            list = new List<int>();
+            result = list.DefaultIfEmpty(-1);
+
+            // One element in collection with -1 value.
+            foreach (var value in result)
+            {
+                Console.WriteLine(value);
+            }
+
+            list = new List<int>();
+            var average = list.DefaultIfEmpty(-1).Average();
+
+            Console.WriteLine(average);
+        }
+
+        //private static void PlayingWithFuncsAsParameters()
+        //{
+        //    BaseClass bc = new BaseClass();
+        //    ClassThatGetsPassedArgumrents ctgpa = new ClassThatGetsPassedArgumrents(bc.Foo, new Action<string>(bc.FooWithParameter), new Func(bc.AnswerToEveryThing));
+        //    int answer = ctgpa.AnswerToEveryThing();
+        //    //ctgpa = new ClassThatGetsPassedArgumrents(bc.Foo, new Action<string>(staticClass.FooWithParameter),  new Func(staticClass.AnswerToEveryThing));
+        //    ctgpa.Foo();
+        //    ctgpa.FooWithParameter("myParameters");
+        //    Console.WriteLine("AnswerToEverything = " + answer);
+        //    Console.ReadLine();
+        //}
 
         private static void PlayingWithTryGetValue()
         {
@@ -263,6 +306,73 @@ namespace ConsoleApplication1
             return dateRange;
         }
     }
+
+    //public class ClassThatGetsPassedArgumrents
+    //{
+    //    private MethodInvoker fooPointer;
+    //    private Program.Func answerPointer;
+    //    private Action<string> fooWithParamsPointer;
+
+    //    public ClassThatGetsPassedArgumrents(MethodInvoker foo, Action<String> fooWithParams, Program.Func answer)
+    //    {
+    //        fooPointer = foo;
+    //        fooWithParamsPointer = fooWithParams;
+    //        answerPointer = answer;
+    //    }
+
+    //    public void Foo()
+    //    {
+    //        fooPointer();
+    //    }
+
+    //    public void FooWithParameter(string s)
+    //    {
+    //        fooWithParamsPointer(s);
+    //    }
+
+    //    public int AnswerToEveryThing()
+    //    {
+    //        return answerPointer();
+    //    }
+
+    //}
+
+    //public class BaseClass
+    //{
+
+    //    public void Foo()
+    //    {
+    //        Console.WriteLine("foo");
+    //    }
+
+    //    public void FooWithParameter(string s)
+    //    {
+    //        Console.WriteLine("foo with parameter {0}", s);
+    //    }
+
+    //    public int AnswerToEveryThing()
+    //    {
+    //        return 42;
+    //    }
+    //}
+
+    //public class staticClass
+    //{
+    //    public static void Foo()
+    //    {
+    //        Console.WriteLine("foo");
+    //    }
+
+    //    public static void FooWithParameter(string s)
+    //    {
+    //        Console.WriteLine("foo with parameter {0}", s);
+    //    }
+
+    //    public static int AnswerToEveryThing()
+    //    {
+    //        return 42;
+    //    }
+    //}
 
     public class DateRange
     {
