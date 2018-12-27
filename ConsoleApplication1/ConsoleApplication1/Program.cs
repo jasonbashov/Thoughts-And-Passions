@@ -17,6 +17,8 @@ namespace ConsoleApplication1
 
         static void Main(string[] args)
         {
+            PlayingWithUnix();
+            //PlayingWithTryGetValue();
             PlayingWithDefaultIfEmpty();
 
             //PlayingWithTryGetValue();
@@ -35,6 +37,40 @@ namespace ConsoleApplication1
             //PlayingWithDelegates();
 
             //PlayingWithReferences();
+        }
+
+        private static void PlayingWithUnix()
+        {
+            Console.WriteLine($"StartDateTime {ToDateTimeUtc(15422472000000000)}");
+            Console.WriteLine($"EndDateTime {ToDateTimeUtc(15422616000000000)}");
+            Console.WriteLine($"WorkDateTime {ToDateTimeUtc(15421536000000000)}");
+            Console.WriteLine("============================================");
+
+            Console.WriteLine($"StartDateTime {ToDateTimeUtc(15424236000000000)}");
+            Console.WriteLine($"EndDateTime {ToDateTimeUtc(15424344000000000)}");
+            Console.WriteLine($"WorkDateTime {ToDateTimeUtc(15423264000000000)}");
+            Console.WriteLine("============================================");
+
+            Console.WriteLine($"StartDateTime {ToDateTimeUtc(15425064000000000)}");
+            Console.WriteLine($"EndDateTime {ToDateTimeUtc(15425136000000000)}");
+            Console.WriteLine($"WorkDateTime {ToDateTimeUtc(15424128000000000)}");
+        }
+
+        private static readonly DateTime UnixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+
+        public static DateTime ToDateTimeUtc(long date)
+        {
+            return UnixEpoch.AddTicks(date);
+        }
+
+        public static long FromDateTime(DateTime date)
+        {
+            return (long)(date - UnixEpoch).Ticks;
+        }
+
+        public static long GetUnixTimestamp(DateTime input)
+        {
+            return (long)(input - UnixEpoch).Ticks;
         }
 
         private static void PlayingWithDefaultIfEmpty()
